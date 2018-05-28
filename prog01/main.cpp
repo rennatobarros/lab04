@@ -36,23 +36,13 @@ int main(int argc, char const *argv[]){
 
 	std::cout << "\nPalavra/Frase Digitada: " << std::endl;
 	std::cout << phrase << std::endl << std::endl;
-	
-	/*	std::cout << "Frase após o downcase: " << std::endl;	*/ 
-	//str_downcase( phrase );
-	/*	std::cout << phrase << std::endl << std::endl;	*/
 
-	/*	std::cout << "Frase após a remoção dos caracteres especiais: " << std::endl;	*/
-	//erase_special_chars( phrase );
-	/*	std::cout << phrase << std::endl << std::endl;	*/
-
-	/*	std::cout << "Frase após a remoção dos acentos: " << std::endl;	*/
-	//remove_accent( phrase );
-	/*	std::cout << phrase << std::endl << std::endl;	*/
-
-	if( isPalindrome( phrase ) )
+	if( isPalindrome( phrase ) ){
 		std::cout << "A palavra/frase digitada " << "é palindroma" << std::endl;
-	else
+	}
+	else{
 		std::cout << "A palavra/frase digitada " << "não é palindroma" << std::endl;
+	}
 
 	return 0;
 
