@@ -86,8 +86,10 @@ public:
 	ListaLigada();
 	~ListaLigada();
 
+	/** Métodos adicionados para auxiliar na resolução do problema */
 	shared_ptr<Node<T>> getHead(void);
 	shared_ptr<Node<T>> getTail(void);
+
 	bool InsereNoInicio(T _valor);
 	bool InsereNoFinal(T _valor);
 	bool InsereNaPosicao(int pos, T _valor);

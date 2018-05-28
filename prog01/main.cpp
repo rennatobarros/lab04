@@ -1,3 +1,13 @@
+/** 
+ * @mainpage Palindromo
+ * @author Renato Barros de Lima Freitas
+ * @date 28/05/2018
+ * @version 1.0
+ *
+ * @file main.cpp
+ * @brief Arquivo principal do programa
+*/
+
 #include <iostream>
 #include "lista.h"
 #include "prog01.h"
@@ -29,22 +39,20 @@ int main(int argc, char const *argv[]){
 	cout << "Tamanho: " << lista1.size() << endl;
 	cout << lista1 << endl; */
 
-	std::string phrase;
+	/** Frase digitada pelo usuário */
+	string phrase;
 
-	std::cout << "Digite uma palavra/frase : " << std::endl;
-	std::getline(std::cin, phrase);
+	cout << "Digite uma palavra/frase : " << endl;
+	getline(cin, phrase);
 
-	std::cout << "\nPalavra/Frase Digitada: " << std::endl;
-	std::cout << phrase << std::endl << std::endl;
+	cout << "\nPalavra/Frase Digitada: " << endl;
+	cout << phrase << endl << endl;
 
 	if( isPalindrome( phrase ) ){
-		std::cout << "A palavra/frase digitada " << "é palindroma" << std::endl;
+		cout << "A palavra/frase digitada " << "é palindroma" << endl;
+	}else{
+		cout << "A palavra/frase digitada " << "não é palindroma" << endl;
 	}
-	else{
-		std::cout << "A palavra/frase digitada " << "não é palindroma" << std::endl;
-	}
-
-	return 0;
 
 	return 0;
 }

@@ -11,6 +11,13 @@
 
 using namespace std;
 
+/**
+ * @brief      Determina se é palindromo
+ *
+ * @param  frase  String com a frase/palavra digitada
+ *
+ * @return     True caso seja palindromo, False caso contrário
+ */
 bool isPalindrome(string frase){
 	bool palindromo = true;
 	unsigned int i = 0;
