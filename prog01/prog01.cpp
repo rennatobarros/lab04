@@ -4,12 +4,24 @@
  */
 
 #include <iostream>
-#include <vector>
+#include <cctype>
 
 #include "lista.h"
 #include "prog01.h"
 
 using namespace std;
+
+
+void removerCaracteresEspeciais(string& frase){
+	size_t caracteres_especiais = frase.find_first_of("'-_!#$%&*()+`{}^:><?|/;.,~][´=ªº ");
+
+	while(caracteres_especiais != string::npos){
+		frase.erase(caracteres_especiais, 1);
+		caracteres_especiais = frase.find_first_of("'-_!#$%&*()+`{}^:><?|/;.,~][´=ªº ");
+	}
+
+	cout << "Frase: " << frase << endl;
+}
 
 /**
  * @brief      Determina se é palindromo
@@ -26,6 +38,8 @@ bool isPalindrome(string frase){
 
 	/** Insere os caracteres da frase na pilha */
 	for (i = 0; i < frase.size() ; ++i){
+		/** Trata todos os caracteres como minúsculos */
+		frase[i] = tolower(frase[i]);
 		pilha.InsereNoInicio(frase[i]);
 	}
 	cout << "aqui: " << i << endl;

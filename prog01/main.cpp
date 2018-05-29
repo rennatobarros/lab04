@@ -9,6 +9,8 @@
 */
 
 #include <iostream>
+
+
 #include "lista.h"
 #include "prog01.h"
 
@@ -47,6 +49,8 @@ int main(int argc, char const *argv[]){
 
 	cout << "\nPalavra/Frase Digitada: " << endl;
 	cout << phrase << endl << endl;
+
+	removerCaracteresEspeciais(phrase);
 
 	if( isPalindrome( phrase ) ){
 		cout << "A palavra/frase digitada " << "é palindroma" << endl;

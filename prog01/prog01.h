@@ -11,4 +11,7 @@
 /** Método para verificação se é palindromo ou não */
 bool isPalindrome(string);
 
+/** Método para ignorar os caracteres especiais */
+void removerCaracteresEspeciais(string&);
+
 #endif
