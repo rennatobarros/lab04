@@ -42,17 +42,18 @@ int main(int argc, char const *argv[]){
 	cout << lista1 << endl; */
 
 	/** Frase digitada pelo usuário */
-	string phrase;
+	string frase;
 
 	cout << "Digite uma palavra/frase : " << endl;
-	getline(cin, phrase);
+	getline(cin, frase);
 
 	cout << "\nPalavra/Frase Digitada: " << endl;
-	cout << phrase << endl << endl;
+	cout << frase << endl << endl;
 
-	removerCaracteresEspeciais(phrase);
+	removerCaracteresAcentuados(frase);
+	removerCaracteresEspeciais(frase);
 
-	if( isPalindrome( phrase ) ){
+	if( isPalindrome( frase ) ){
 		cout << "A palavra/frase digitada " << "é palindroma" << endl;
 	}else{
 		cout << "A palavra/frase digitada " << "não é palindroma" << endl;

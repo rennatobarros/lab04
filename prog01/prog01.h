@@ -14,4 +14,7 @@ bool isPalindrome(string);
 /** Método para ignorar os caracteres especiais */
 void removerCaracteresEspeciais(string&);
 
+/** Método para tratar letras acentuadas como sem acento */
+void removerCaracteresAcentuados(string&);
+
 #endif
